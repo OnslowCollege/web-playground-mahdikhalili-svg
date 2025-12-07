@@ -1,7 +1,104 @@
+/* GENERAL */
 body {
-background-color: Football rgb(119, 173, 152);
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #77ad98;
+    color: #ffffff;
 }
 
-h1 {
-font-family: "Copperplate", "Helvitica", sans-serif;
+h1, h2, h3 {
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* HERO SECTION */
+.hero {
+    background: url("https://upload.wikimedia.org/wikipedia/commons/a/a4/Santiago_Bernabeu_2019.jpg")
+        center/cover no-repeat;
+    color: white;
+    text-align: center;
+    padding: 120px 20px;
+}
+
+.hero h1 {
+    font-size: 60px;
+    margin: 0;
+    text-shadow: 0 0 10px black;
+}
+
+.hero p {
+    font-size: 22px;
+    margin-top: 15px;
+    text-shadow: 0 0 6px black;
+}
+
+/* INTRO SECTION */
+.intro {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.about-button {
+    display: inline-block;
+    padding: 12px 25px;
+    background: #00529F;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+
+.about-button:hover {
+    background: #003876;
+}
+
+/* LEGENDS */
+.legends {
+    padding: 40px 20px;
+    background: white;
+}
+
+.legend-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.legend-card {
+    background: #77ad98;
+    width: 260px;
+    padding: 15px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Highlight Ronaldo */
+.legend-card.highlight {
+    border: 3px solid gold;
+    transform: scale(1.05);
+}
+
+.legend-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.legend-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.18);
+}
+
+/* FOOTER */
+.footer {
+    background: ##77ad98;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
 }
